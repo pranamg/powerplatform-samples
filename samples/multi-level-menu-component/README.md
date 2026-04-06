@@ -369,7 +369,7 @@ ExpandMenuAction is set to `ClearCollect(ThisMenu, NavMenuMultiLevelVer2_1.Updat
 
 SelectionAction is set to `ClearCollect(ThisMenu, NavMenuMultiLevelVer2_1.UpdateMenuSelection(MenuName, DefaultMenu, ThisMenu));`
 
-ExpandMenuAction is the event property that occurs when a menu header is expanded or contracted and SelectionAction is the event property that occurs when a menu item is selected returning the title of the selected menu in the parameter MenuName. The returned MenuName can then be used to navigate to a screen. Naviagation to a screen would be performed in the SelectionAction property.
+ExpandMenuAction is the event property that occurs when a menu header is expanded or contracted and SelectionAction is the event property that occurs when a menu item is selected returning the title of the selected menu in the parameter MenuName. The returned MenuName can then be used to navigate to a screen. Navigation to a screen would be performed in the SelectionAction property in a manner similar to the below.
 
 ```
 Switch(
@@ -383,7 +383,7 @@ Switch(
 
 A simple Switch statement can be used but the better method would be to create a table containing the returned menu names and the matching screen objects, lookup and navigate to the screen.
 
-The menu contains a text value to represent the screen rather than the screen object itself. A collection containing the txt value matching with the scrren object can be declared in the App OnStart. One location means one place to change the navigation rather than using the Switch statement. 
+The menu contains a text value to represent the screen rather than the screen object itself. A collection containing the text value matching with the screen object can be declared in the App OnStart. One location means one place to change the navigation rather than using the Switch statement. 
 
 ```
 ClearCollect(ScreenNavigate, 
@@ -401,6 +401,7 @@ and a lookup to create the Navigate added to the SelectionAction property
 Navigate(LookUp(ScreenNavigate, NavigationScreen = LookUp(DefaultMenu, MenuTitle = MenuName, NavigationScreen), TheScreen), ScreenTransition.Fade);
 ```
 
+Always remember that Sometimes you’ll want to keep the menu disabled until the user does something on the screen, then let them move to another screen. You can perform this by just not updating the ThisMenu collection and navigating to a new screen in the ExpandMenuAction and SelectionAction event properties.
 
 
 Below uses a Notify statement to show the returned MenuName value when options on the menu are selected.
