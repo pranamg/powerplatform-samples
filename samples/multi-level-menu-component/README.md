@@ -344,9 +344,28 @@ and
 ClearCollect(ThisMenu,Filter(DefaultMenu, Type="Menu" || (Type="MenuHeader" && MenuLevel = 1)));
 ```
 The menu uses a container with an icon definition and a text control for the menu links rather than a button because you can include any icon and are not limited by the number of icons included with the button control. 
+
 It is probably better not to include the icon SVG definition in the collection definition as shown above but rather define global variables to represent the icons.
 
+The important properties of the component are 
+* MenuList
+* ExpandMenuAction
+* SelectionAction
 
+The optional properties are
+* MenuColor
+* MenuIndent
+* MenuTemplateSize
+
+In this example where DefaultMenu is the name of the collection containing all of the menu items consisting of the three menu types, menu headers, menu items and the base menu; and ThisMenu is the collection from which items are added and removed based on the items selected in the component:
+
+MenuList is set to ThisMenu
+
+ExpandMenuAction is set to ClearCollect(ThisMenu, NavMenuMultiLevelVer2_1.UpdateMenuExpand(ThisMenu, DefaultMenu, MenuName));
+
+SelectionAction is set to ClearCollect(ThisMenu, NavMenuMultiLevelVer2_1.UpdateMenuSelection(MenuName, DefaultMenu, ThisMenu));
+
+ExpandMenuAction is the event property that occurs when a menu header is expanded or contracted and SelectionAction is the event property that occurs when a menu item is selected returning the title of the selected menu in the parameter MenuName. MenuName can then be used to navigate to a menu
 
 <!--
 Any special pre-requisites? Include any lists, permissions, offerings to the demo gods, or whatever else needs to be done for this sample to work.
