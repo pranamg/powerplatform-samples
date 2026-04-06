@@ -121,14 +121,14 @@ Provide a link to your GitHub profile to help others find more cool things you h
 If you want to provide links to your social media, blog, and employer name, make sure to update your GitHub profile.
 -->
 
-* ![ ](assets/github.svg)[Ronald     Walcott   ](https://github.com/ronaldwalcott)   ![ ](assets/linkedin-1.svg) [Ronald Walcott](https://www.linkedin.com/in/ronald-b-walcott/)
+* ![ ](assets/github.svg)[Ronald Walcott ](https://github.com/ronaldwalcott)  
+* ![ ](assets/linkedin-1.svg) [Ronald Walcott](https://www.linkedin.com/in/ronald-b-walcott/)
 
 ## Version history
 
 Version|Date|Comments
 -------|----|--------
-1.1|November 1, 2022|Update comment
-1.0|October 29, 2022|Initial release
+1.0|April 06, 2026|Initial release
 
 ## Prerequisites
 
@@ -156,7 +156,7 @@ As tempting as it may be, don't just use images to describe the steps. Let's be 
 
 ### Using the solution zip
 
-* [Download](./solution/solution.zip) the `.zip` from the `solution` folder
+* [Download](./solutions/solution.zip) the `.zip` from the `solution` folder
 * Within **Power Apps Studio**, import the solution `.zip` file using **Solutions** > **Import Solution** and select the `.zip` file you just packed.
 * Open the app in edit mode and make sure the data source **Data source name** is connected correctly.
 
