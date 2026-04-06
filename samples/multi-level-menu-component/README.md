@@ -25,7 +25,7 @@ If your solution uses a placeholder screen and requires the user to configure it
 You can add as many screen shots as you'd like to help users understand your solution without having to download it and install it.
 -->
 
-![Example of a good preview](assets/goodpreview.png)
+![Example of a good preview](assets/InitialMenu.png)
 
 ![Also a good preview](assets/alsogoodpreview.png)
 
