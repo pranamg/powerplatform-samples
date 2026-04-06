@@ -343,6 +343,9 @@ and
 //Create the initial menu with the menu items
 ClearCollect(ThisMenu,Filter(DefaultMenu, Type="Menu" || (Type="MenuHeader" && MenuLevel = 1)));
 ```
+The menu uses a container with an icon definition and a text control for the menu links rather than a button because you can include any icon and are not limited by the number of icons included with the button control. 
+It is probably better not to include the icon SVG definition in the collection definition as shown above but rather define global variables to represent the icons.
+
 
 
 <!--
