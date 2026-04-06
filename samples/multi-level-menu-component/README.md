@@ -391,7 +391,7 @@ ClearCollect(ScreenNavigate,
 );
 ```
 
-and a lookup 
+and a lookup to create the Navigate added to the SelectionAction property 
 
 ```
 Navigate(LookUp(ScreenNavigate, NavigationScreen = LookUp(DefaultMenu, MenuTitle = MenuName, NavigationScreen), TheScreen), ScreenTransition.Fade);
