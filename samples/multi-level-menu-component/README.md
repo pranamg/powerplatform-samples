@@ -134,7 +134,7 @@ Version|Date|Comments
 
 ## Prerequisites
 
-The component needs 2 collections to manage the menu items list. I tend to use one called DefaultMenu and the other ThisMenu (displays the current menu items).
+The component relies on two collections to manage the menu. I typically use one called DefaultMenu, which holds the full list of items, and another called ThisMenu, which contains only the current items to be displayed. The gallery that renders the menu is bound to ThisMenu as its data source.
 
 ```
 ClearCollect(DefaultMenu, 
@@ -345,7 +345,9 @@ and
 //Create the initial menu with the menu items
 ClearCollect(ThisMenu,Filter(DefaultMenu, Type="Menu" || (Type="MenuHeader" && MenuLevel = 1)));
 ```
-The menu uses a container with an icon definition and a text control for the menu links rather than a button because you can include any icon and are not limited by the number of icons included with the button control. 
+The menu uses a container with an icon and a text control for its links instead of a button. This approach allows you to include any icon you choose, rather than being limited to the predefined set available in the button control.
+
+The Action and ActionType columns in the collection are for future expansion and are not relevant to the basic screen navigation operation.
 
 It is probably better not to include the icon SVG definition in the collection definition as shown above but rather define global variables to represent the icons.
 
