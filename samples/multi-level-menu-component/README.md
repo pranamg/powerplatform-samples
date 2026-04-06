@@ -12,7 +12,7 @@ BAD 👎:
 
 ## Summary
 
-This is a Power Apps Canvas component that demonstrates how to implement a multi level menu currently configured for a maximum of 6 levels. 
+This is a Power Apps Canvas component that demonstrates how to implement a multi level menu. It is currently configured for a maximum of 6 levels. 
 
 
 <!--
@@ -25,9 +25,15 @@ If your solution uses a placeholder screen and requires the user to configure it
 You can add as many screen shots as you'd like to help users understand your solution without having to download it and install it.
 -->
 
-![Example of a good preview](assets/InitialMenu.png)
+![Menu Component](assets/MenuComponentSample.png)
 
-![Also a good preview](assets/alsogoodpreview.png)
+The menu is created from a table containiing all the menu options listed in order
+
+![Menu Items](assets/MenuAllItems.png)
+
+
+![Menu Items](assets/DefaultMenu.png)
+
 
 ![Not so good](assets/notsogood.gif)
 
