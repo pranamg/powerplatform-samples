@@ -377,7 +377,27 @@ Switch(
 )
 ```
 
-A simple Switch statement can be used but the better method would be to create a table containing the returned menu names and the matching screen objects, lookup and navigate to the screen. 
+A simple Switch statement can be used but the better method would be to create a table containing the returned menu names and the matching screen objects, lookup and navigate to the screen.
+
+The navigation screens can be declared in the App OnStart. One location means one place to change the navigation. 
+
+```
+ClearCollect(ScreenNavigate, 
+    {NavigationScreen:"HomeScreen", TheScreen: Screen10},
+    {NavigationScreen:"AppointmentScreen", TheScreen: Screen10_1},
+    {NavigationScreen:"SubMenu2Option2Screen", TheScreen: Screen10_1},
+    {NavigationScreen:"SubMenu1Option3Screen", TheScreen: Screen10_1},
+    {NavigationScreen:"AMenuOptionScreen", TheScreen: Screen10_1}  
+);
+```
+
+and a lookup 
+
+```
+Navigate(LookUp(ScreenNavigate, NavigationScreen = LookUp(DefaultMenu, MenuTitle = MenuName, NavigationScreen), TheScreen), ScreenTransition.Fade);
+```
+
+
 
 Below uses a Notify statement to show the returned MenuName value when options on the menu are selected.
 
