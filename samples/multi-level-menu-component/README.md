@@ -27,15 +27,26 @@ You can add as many screen shots as you'd like to help users understand your sol
 
 ![Menu Component](assets/MenuComponentSample.png)
 
-The menu is created from a table containiing all the menu options listed in order
+The menu is created from a table containiing all the menu options listed in parent child order 
 
 ![Menu Items](assets/MenuAllItems.png)
 
+A collection containing all of the items has to be configured. This can be added to the OnStart of the canvas app. MenuParent and MenuLevel must be configured correctly. MenuParent indicates the parent of the menu item and MenuLevel the level of the menu item.
 
 ![Menu Items](assets/DefaultMenu.png)
 
+The menu which initially displays are the menu items with MenuLevel equal to 1
 
-![Not so good](assets/notsogood.gif)
+![Menu Items](assets/InitialMenu.png)
+
+resulting in 
+
+![Menu Items](assets/MenuAppearance.png)
+
+based on the menu items created in the DefaultMenu collection created above.
+When a menu option is chosen the menu title is returned which will allow navigating to a screen based on this value.
+
+
 
 ## Applies to
 
