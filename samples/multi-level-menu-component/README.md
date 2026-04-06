@@ -27,7 +27,8 @@ You can add as many screen shots as you'd like to help users understand your sol
 
 ![Menu Component](assets/MenuComponentSample.png)
 
-The menu is created from a table containiing all the menu options listed in parent child order 
+The menu is built from a table that defines all options in a parent‑child hierarchy (flattened). In this example, the table contains every possible option, but only the relevant items are shown depending on the user’s current position in the menu.
+
 
 ![Menu Items](assets/MenuAllItems.png)
 
@@ -35,7 +36,7 @@ A collection containing all of the items has to be configured. This can be added
 
 ![Menu Items](assets/DefaultMenu.png)
 
-The menu which initially displays are the menu items with MenuLevel equal to 1
+When the app’s OnStart property runs, the menu initially displays items where MenuLevel equals 1. This design was originally based on a single‑level menu, which is why the type check remains in the formula, though it becomes unnecessary if all starting items are correctly assigned to MenuLevel = 1
 
 ![Menu Items](assets/InitialMenu.png)
 
@@ -44,6 +45,7 @@ resulting in
 ![Menu Items](assets/MenuAppearance.png)
 
 based on the menu items created in the DefaultMenu collection created above.
+
 When a menu option is chosen the menu title is returned which will allow navigating to a screen based on this value.
 
 
@@ -379,7 +381,7 @@ Switch(
 
 A simple Switch statement can be used but the better method would be to create a table containing the returned menu names and the matching screen objects, lookup and navigate to the screen.
 
-The navigation screens can be declared in the App OnStart. One location means one place to change the navigation. 
+The menu contains a text value to represent the screen rather than the screen object itself. A collection containing the txt value matching with the scrren object can be declared in the App OnStart. One location means one place to change the navigation rather than using the Switch statement. 
 
 ```
 ClearCollect(ScreenNavigate, 
