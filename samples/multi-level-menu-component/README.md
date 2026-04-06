@@ -365,7 +365,19 @@ ExpandMenuAction is set to ClearCollect(ThisMenu, NavMenuMultiLevelVer2_1.Update
 
 SelectionAction is set to ClearCollect(ThisMenu, NavMenuMultiLevelVer2_1.UpdateMenuSelection(MenuName, DefaultMenu, ThisMenu));
 
-ExpandMenuAction is the event property that occurs when a menu header is expanded or contracted and SelectionAction is the event property that occurs when a menu item is selected returning the title of the selected menu in the parameter MenuName. MenuName can then be used to navigate to a menu
+ExpandMenuAction is the event property that occurs when a menu header is expanded or contracted and SelectionAction is the event property that occurs when a menu item is selected returning the title of the selected menu in the parameter MenuName. The returned MenuName can then be used to navigate to a screen.
+
+```
+Switch(
+    MenuName,
+    "Home", Navigate(HomeScreen, ScreenTransition.Fade),
+    "Settings", Navigate(SettingsScreen, ScreenTransition.Fade),
+    "Profile", Navigate(ProfileScreen, ScreenTransition.Fade),
+    "Help", Navigate(HelpScreen, ScreenTransition.Fade)
+)
+```
+
+A simple Switch statement can be used but the better method would be to create a table containing the returned menu names and the matching screen objects, lookup and navigate to the screen. 
 
 <!--
 Any special pre-requisites? Include any lists, permissions, offerings to the demo gods, or whatever else needs to be done for this sample to work.
