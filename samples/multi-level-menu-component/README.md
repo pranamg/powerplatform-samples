@@ -121,7 +121,7 @@ Provide a link to your GitHub profile to help others find more cool things you h
 If you want to provide links to your social media, blog, and employer name, make sure to update your GitHub profile.
 -->
 
-* [Author Name](LinkToYourGitHubProfile)
+* ![ ](assets/github.svg)[Ronald     Walcott   ](https://github.com/ronaldwalcott)   ![ ](assets/linkedin-1.svg) [Ronald Walcott](https://www.linkedin.com/in/ronald-b-walcott/)
 
 ## Version history
 
