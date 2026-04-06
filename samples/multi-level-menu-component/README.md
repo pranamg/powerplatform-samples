@@ -1,4 +1,4 @@
-# Title of the sample
+# Multi-level Menu Component
 
 <!--
 This is how you want the sample to appear in the samples browser.
@@ -12,7 +12,8 @@ BAD 👎:
 
 ## Summary
 
-Short summary on functionality and used technologies.
+This is a Power Apps Canvas component that demonstrates how to implement a multi level menu currently configured for a maximum of 6 levels. 
+
 
 <!--
 Please provide a high-quality screenshot of your solution below. It should be stored in a folder called `assets`. 
