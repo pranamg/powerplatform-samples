@@ -359,13 +359,13 @@ It is probably better not to include the icon SVG definition in the collection d
 
 In this example where DefaultMenu is the name of the collection containing all of the menu items consisting of the three menu types, menu headers, menu items and the base menu; and ThisMenu is the collection from which items are added and removed based on the items selected in the component:
 
-MenuList is set to ThisMenu
+MenuList is set to `ThisMenu`
 
-ExpandMenuAction is set to ClearCollect(ThisMenu, NavMenuMultiLevelVer2_1.UpdateMenuExpand(ThisMenu, DefaultMenu, MenuName));
+ExpandMenuAction is set to `ClearCollect(ThisMenu, NavMenuMultiLevelVer2_1.UpdateMenuExpand(ThisMenu, DefaultMenu, MenuName));`
 
-SelectionAction is set to ClearCollect(ThisMenu, NavMenuMultiLevelVer2_1.UpdateMenuSelection(MenuName, DefaultMenu, ThisMenu));
+SelectionAction is set to `ClearCollect(ThisMenu, NavMenuMultiLevelVer2_1.UpdateMenuSelection(MenuName, DefaultMenu, ThisMenu));`
 
-ExpandMenuAction is the event property that occurs when a menu header is expanded or contracted and SelectionAction is the event property that occurs when a menu item is selected returning the title of the selected menu in the parameter MenuName. The returned MenuName can then be used to navigate to a screen.
+ExpandMenuAction is the event property that occurs when a menu header is expanded or contracted and SelectionAction is the event property that occurs when a menu item is selected returning the title of the selected menu in the parameter MenuName. The returned MenuName can then be used to navigate to a screen. Naviagation to a screen would be performed in the SelectionAction property.
 
 ```
 Switch(
@@ -428,12 +428,11 @@ You can also use the [Power Apps CLI](https://docs.microsoft.com/powerapps/devel
 
 ## Features
 
-Description of the solution with possible additional details than in short summary.
-This solution illustrates the following concepts on top of the Power Platform:
+This sample app explores a few fundamental concepts when building components   
 
-* topic 1
-* topic 2
-* topic 3
+* Shows how to use event properties to provide feedback to the calling app
+* Shows the value of function properties in components
+* Shows how to use functional code in components when **Collect** and **ClearCollect** are not available   
 
 <!--
 Note that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions in advance! You rock ❤.
@@ -471,7 +470,7 @@ Or:
 @hugoabernier%20@VesaJuvonen%20@PopWarner
 -->
 
-> Note: don't worry about this section, we'll update the links.
+
 
 We do not support samples, but this community is always willing to help, and we want to improve these samples. We use GitHub to track issues, which makes it easy for  community members to volunteer their time and help resolve issues.
 
