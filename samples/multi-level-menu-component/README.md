@@ -369,7 +369,7 @@ ExpandMenuAction is the event property that occurs when a menu header is expande
 
 ```
 Switch(
-    MenuName,
+    LookUp(DefaultMenu, MenuTitle = MenuName, NavigationScreen),
     "Home", Navigate(HomeScreen, ScreenTransition.Fade),
     "Settings", Navigate(SettingsScreen, ScreenTransition.Fade),
     "Profile", Navigate(ProfileScreen, ScreenTransition.Fade),
