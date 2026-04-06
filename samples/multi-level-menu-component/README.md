@@ -347,12 +347,12 @@ The menu uses a container with an icon definition and a text control for the men
 
 It is probably better not to include the icon SVG definition in the collection definition as shown above but rather define global variables to represent the icons.
 
-The important properties of the component are 
+### The important properties of the component are 
 * MenuList
 * ExpandMenuAction
 * SelectionAction
 
-The optional properties are
+### The optional properties are
 * MenuColor
 * MenuIndent
 * MenuTemplateSize
@@ -378,6 +378,11 @@ Switch(
 ```
 
 A simple Switch statement can be used but the better method would be to create a table containing the returned menu names and the matching screen objects, lookup and navigate to the screen. 
+
+Below uses a Notify statement to show the returned MenuName value when options on the menu are selected.
+
+![Screen recording](assets/ScreenRecord1.gif)
+
 
 <!--
 Any special pre-requisites? Include any lists, permissions, offerings to the demo gods, or whatever else needs to be done for this sample to work.
