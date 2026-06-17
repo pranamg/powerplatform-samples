@@ -45,7 +45,7 @@ When a menu option is chosen the menu title is returned which will allow navigat
 
 ## Contributors
 
-* ![ ](assets/github.svg)[Ronald Walcott ](https://github.com/ronaldwalcott) | [LinkedIn](https://www.linkedin.com/in/ronald-b-walcott/)
+* ![ ](assets/github.svg)[Ronald Walcott](https://github.com/ronaldwalcott) | [LinkedIn](https://www.linkedin.com/in/ronald-b-walcott/)
 
 ## Version history
 
