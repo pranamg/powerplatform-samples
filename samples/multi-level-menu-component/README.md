@@ -36,7 +36,7 @@ When a menu option is chosen the menu title is returned which will allow navigat
 ![Dataverse](https://img.shields.io/badge/Dataverse-No-red "No")
 ![AI Builder](https://img.shields.io/badge/AI%20Builder-No-red "No")
 ![Custom Connectors](https://img.shields.io/badge/Custom%20Connectors-No-red "No")
-![Power Fx](https://img.shields.io/badge/Power%20Fx-No-red "No")
+![Power Fx](https://img.shields.io/badge/Power%20Fx-Yes-green "Yes")
 
 ## Compatibility
 
